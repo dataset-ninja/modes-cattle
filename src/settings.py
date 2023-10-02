@@ -13,37 +13,44 @@ from dataset_tools.templates import (
 ##################################
 # * Before uploading to instance #
 ##################################
-PROJECT_NAME: str = None
-PROJECT_NAME_FULL: str = None
+PROJECT_NAME: str = "MoDES"
+PROJECT_NAME_FULL: str = (
+    "MoDES: Monocular Depth Estimation and Segmentation Dataset of Stray Animals"
+)
 HIDE_DATASET = True  # set False when 100% sure about repo quality
 
 ##################################
 # * After uploading to instance ##
 ##################################
-LICENSE: License = None
-APPLICATIONS: List[Union[Industry, Domain, Research]] = None
-CATEGORY: Category = None
+LICENSE: License = License.CC0_1_0()
+APPLICATIONS: List[Union[Industry, Domain, Research]] = [Industry.Automotive()]
+CATEGORY: Category = Category.SelfDriving()
 
-CV_TASKS: List[CVTask] = None
-ANNOTATION_TYPES: List[AnnotationType] = None
+CV_TASKS: List[CVTask] = [CVTask.MonocularDepthEstimation()]
+ANNOTATION_TYPES: List[AnnotationType] = [
+    AnnotationType.MonocularDepthEstimation(),
+    AnnotationType.SemanticSegmentation(),
+]
 
 RELEASE_DATE: Optional[str] = None  # e.g. "YYYY-MM-DD"
 if RELEASE_DATE is None:
-    RELEASE_YEAR: int = None
+    RELEASE_YEAR: int = 2020
 
-HOMEPAGE_URL: str = None
+HOMEPAGE_URL: str = "https://www.kaggle.com/datasets/bsridevi/modes-dataset-of-stray-animals/data"
 # e.g. "https://some.com/dataset/homepage"
 
 PREVIEW_IMAGE_ID: int = None
 # This should be filled AFTER uploading images to instance, just ID of any image.
 
-GITHUB_URL: str = None
+GITHUB_URL: str = "https://github.com/dataset-ninja/modes-cattle"
 # URL to GitHub repo on dataset ninja (e.g. "https://github.com/dataset-ninja/some-dataset")
 
 ##################################
 ### * Optional after uploading ###
 ##################################
-DOWNLOAD_ORIGINAL_URL: Optional[Union[str, dict]] = None
+DOWNLOAD_ORIGINAL_URL: Optional[
+    Union[str, dict]
+] = "https://www.kaggle.com/datasets/bsridevi/modes-dataset-of-stray-animals/download?datasetVersionNumber=1"
 # Optional link for downloading original dataset (e.g. "https://some.com/dataset/download")
 
 CLASS2COLOR: Optional[Dict[str, List[str]]] = None
@@ -53,10 +60,12 @@ CLASS2COLOR: Optional[Dict[str, List[str]]] = None
 # Use dict key to specify name for a button
 PAPER: Optional[Union[str, List[str], Dict[str, str]]] = None
 BLOGPOST: Optional[Union[str, List[str], Dict[str, str]]] = None
-REPOSITORY: Optional[Union[str, List[str], Dict[str, str]]] = None
+REPOSITORY: Optional[
+    Union[str, List[str], Dict[str, str]]
+] = "https://github.com/sridevibonthu/EVA/tree/master/S15"
 
 CITATION_URL: Optional[str] = None
-AUTHORS: Optional[List[str]] = None
+AUTHORS: Optional[List[str]] = ["Sridevi Bonthu"]
 
 ORGANIZATION_NAME: Optional[Union[str, List[str]]] = None
 ORGANIZATION_URL: Optional[Union[str, List[str]]] = None

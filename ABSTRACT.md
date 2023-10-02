@@ -1,0 +1,1 @@
+This custom Dataset is created to aid autonomous navigation on Indian Roads. Many of the animals like Cows, Bulls, Calf etc. will be found on roads at some places. This dataset is designed to be useful for Monocular Depth Estimation and Segmentation tasks.
