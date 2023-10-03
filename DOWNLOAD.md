@@ -1,6 +1,6 @@
 Dataset **MoDES-Cattle** can be downloaded in [Supervisely format](https://developer.supervisely.com/api-references/supervisely-annotation-json-format):
 
- [Download](Set 'HIDE_DATASET=False' to generate download link)
+ [Download](https://assets.supervisely.com/supervisely-supervisely-assets-public/teams_storage/J/r/vp/57CGXVP1ZGkAdM9O44W6Ep0mjXUtatHYJCMAGBFp1KdzYKhlHNXfzrZjhotWkAIm1Q2od4DsFEZimXQ6Ztk6tgj9HCPezZYY8nejpM872LWn6v8PfeLF0Od2JkI1.tar)
 
 As an alternative, it can be downloaded with *dataset-tools* package:
 ``` bash
