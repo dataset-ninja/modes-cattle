@@ -13,17 +13,17 @@ from dataset_tools.templates import (
 ##################################
 # * Before uploading to instance #
 ##################################
-PROJECT_NAME: str = "MoDES"
+PROJECT_NAME: str = "MoDES-Cattle"
 PROJECT_NAME_FULL: str = (
     "MoDES: Monocular Depth Estimation and Segmentation Dataset of Stray Animals"
 )
-HIDE_DATASET = True  # set False when 100% sure about repo quality
+HIDE_DATASET = False  # set False when 100% sure about repo quality
 
 ##################################
 # * After uploading to instance ##
 ##################################
 LICENSE: License = License.CC0_1_0()
-APPLICATIONS: List[Union[Industry, Domain, Research]] = [Industry.Automotive()]
+APPLICATIONS: List[Union[Industry, Domain, Research]] = [Domain.Educational(is_used=False)]
 CATEGORY: Category = Category.SelfDriving()
 
 CV_TASKS: List[CVTask] = [CVTask.MonocularDepthEstimation(), CVTask.SemanticSegmentation(),]
@@ -71,7 +71,7 @@ ORGANIZATION_NAME: Optional[Union[str, List[str]]] = None
 ORGANIZATION_URL: Optional[Union[str, List[str]]] = None
 
 # Set '__PRETEXT__' or '__POSTTEXT__' as a key with string value to add custom text. e.g. SLYTAGSPLIT = {'__POSTTEXT__':'some text}
-SLYTAGSPLIT: Optional[Dict[str, Union[List[str], str]]] = None
+SLYTAGSPLIT: Optional[Dict[str, Union[List[str], str]]] = {"__PRETEXT__": "Additionally, depth masks and rgb images were grouped by their ***image_id***"}
 TAGS: Optional[List[str]] = None
 
 
