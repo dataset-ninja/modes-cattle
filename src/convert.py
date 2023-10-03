@@ -35,7 +35,7 @@ def convert_and_upload_supervisely_project(
     api: sly.Api, workspace_id: int, project_name: str
 ) -> sly.ProjectInfo:
     # project_name = "MoDES Dataset of Cattle"
-    dataset_path = "/mnt/d/datasetninja-raw/modes-cattle/out2"
+    dataset_path = "/home/grokhi/rawdata/modes-cattle/out2"
     batch_size = 30
     ds_name = "ds"
     images_folder = "images"

@@ -26,7 +26,7 @@ LICENSE: License = License.CC0_1_0()
 APPLICATIONS: List[Union[Industry, Domain, Research]] = [Industry.Automotive()]
 CATEGORY: Category = Category.SelfDriving()
 
-CV_TASKS: List[CVTask] = [CVTask.MonocularDepthEstimation()]
+CV_TASKS: List[CVTask] = [CVTask.MonocularDepthEstimation(), CVTask.SemanticSegmentation(),]
 ANNOTATION_TYPES: List[AnnotationType] = [
     AnnotationType.MonocularDepthEstimation(),
     AnnotationType.SemanticSegmentation(),
@@ -39,7 +39,7 @@ if RELEASE_DATE is None:
 HOMEPAGE_URL: str = "https://www.kaggle.com/datasets/bsridevi/modes-dataset-of-stray-animals/data"
 # e.g. "https://some.com/dataset/homepage"
 
-PREVIEW_IMAGE_ID: int = None
+PREVIEW_IMAGE_ID: int = 6178629
 # This should be filled AFTER uploading images to instance, just ID of any image.
 
 GITHUB_URL: str = "https://github.com/dataset-ninja/modes-cattle"
